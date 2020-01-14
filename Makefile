@@ -14,7 +14,7 @@ ZED_CAMERA=0
 USE_CPP=0
 DEBUG=0
 
-ARCH= -gencode arch=compute_75,code=[sm_75,compute_75] -gencode arch=compute_50,code=[sm_50,compute_50] -gencode arch=compute_52,code=[sm_52,compute_52] -gencode arch=compute_60,code=sm_60 -gencode arch=compute_61,code=sm_61 -gencode arch=compute_61,code=compute_61
+ARCH= -gencode arch=compute_75,code=[sm_75,compute_75] -gencode arch=compute_70,code=[sm_70,compute_70] -gencode arch=compute_72,code=[sm_72,compute_72] -gencode arch=compute_50,code=[sm_50,compute_50] -gencode arch=compute_52,code=[sm_52,compute_52] -gencode arch=compute_60,code=sm_60 -gencode arch=compute_61,code=sm_61 -gencode arch=compute_61,code=compute_61
 
 OS := $(shell uname)
 
