@@ -2,7 +2,7 @@ GPU=1
 CUDNN=1
 CUDNN_HALF=0
 OPENCV=1
-AVX=0
+AVX=1
 OPENMP=0
 LIBSO=1
 ZED_CAMERA=0
@@ -67,7 +67,7 @@ endif
 
 CPP=g++ -std=c++11
 NVCC=nvcc
-OPTS=-Ofast
+OPTS=-O3 -march=broadwell -mtune=intel
 LDFLAGS= -lm -pthread
 COMMON= -Iinclude/ -I3rdparty/stb/include
 CFLAGS=-Wall -Wfatal-errors -Wno-unused-result -Wno-unknown-pragmas -fPIC
